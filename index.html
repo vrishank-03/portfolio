@@ -16,238 +16,8 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-}
-
-:root {
-    --bg-color: #fdfdfd;
-    --text-color: #333;
-    --main-color: #754e49;
-    --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
-}
-
-html {
-    font-size: 79.5%;
-    overflow-x: hidden;
-}
-
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.header {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    padding: 2rem 7%;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    z-index: 100;
-}
-
-.logo {
-    font-size: 2.2rem;
-    color: #0000FF;
-    font-weight: 600;
-    cursor: default;
-    margin-right: auto;
-}
-
-.navbar a {
-   position: relative;
-   font-size: 1.2rem;
-   color: black;
-   font-weight: 500;
-   margin-right: 3.5rem;
-}
-
-.navbar a.active::before {
-    content: '';
-    position: absolute;
-    left: 0%;
-    bottom: -6px;
-    width: 100%;
-    height: ,4rem;
-    height: .15rem;
-    background: black;
-}
-
-#darkMode-icon {
-    font-size: 1.6rem;
-    color: black;
-    cursor: pointer;
-}
-
-section {
-    min-height: 100vh;
-    padding: 10rem 7% 2rem;
-}
-
-.home {
-    display: flex;
-    align-items: center;
-}
-
-.home .home-content {
-    max-width: 44rem;  
-}
-
-.home-content h3 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: .3;
-}
-
-.home-content h1 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    margin-bottom: .3rem;
-}
-
-.home-content p {
-    font-size: 1.3rem;
-}
-
-.home-content .social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
-    font-size: 2rem;
-    color: var(--main-color);
-    margin: 2.3rem 1.3rem 3rem 0;
-    transition: .345s ease;
-}
-
-.home-content .social-media a:hover {
-    background: skyblue;
-    color: var(--white-color);
-}
-
-.btn {
-    display: inline-block;
-    padding: 1.2rem 2.6rem;
-    background: yellowgreen;
-    border-radius: 1rem;
-    box-shadow: 0 .2rem .4rem var(--shadow-color);
-    font-size: 1.2rem;
-    color: #333;
-    letter-spacing: .01rem;
-    font-weight: 600;
-    border: .14rem solid transparent;
-    transition: .1s ease-out;
-}
-
-.btn:hover {
-    background: transparent;
-    color: yellowgreen;
-    border-color: #333;
-}
-
-.home .profession-container {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 600px;
-    height: 600px;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.home .profession-container .profession-box {
-    position: absolute;
-    margin-top: 50px;
-    top: 0;
-    right: 0;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-
-.home .profession-box .profession {
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #0000FF;
-    transform: rotate(calc(360deg / 2 * var(--i)));
-    transform-origin: 300px;
-    background: var(--bg-color);
-    padding: 13px 0;
-}
-
-.home .profession-box .profession:nth-child(1) i {
-    margin-right: 90px;
-}
-
-.home .profession-box .profession:nth-child(2) {
-    padding-right: 10px;
-    padding-left: 29px;
-
-}
-
-.home .profession i {
-    font-size: 2.5rem;
-}
-
-.home .profession h3 {
-    font-size: 2rem;
-    line-height: 1;
-    font-weight: 250;
-}
-
-.home .profession-box .circle {
-    width: 500px;
-    height: 500px;
-    border: 3px solid blue;
-    border-radius: 75%;
-}
-
-.home .profession-container .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 300px solid skyblue;
-    border-right: 300px solid skyblue;
-    border-bottom: 300px solid skyblue;
-    border-left: 300px solid transparent;
-}
-
-.home-img img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 27%;
-    pointer-events: none;
-}
-    </style>
 </head>
 
 <body>
@@ -278,7 +48,7 @@ section {
     
                 <a href="#"><i class="bx bxl-meta"></i></box-icon></a>
                 <a href="#"><i class="bx bxl-github"></i></box-icon></a>
-                <a href="#"><i class='bx bxl-linkedin-square'></i></box-icon></a>
+                <a href="https://www.linkedin.com/in/vrishank-mistry/" target="_blank"><i class='bx bxl-linkedin-square'></i></box-icon></a>
             </div>
 
             <a href="#" class="btn">Download CV</a>
@@ -287,7 +57,7 @@ section {
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
-                    <i class="bx bx-code-alt"></i>
+                    <i class='bx bxl-react'></i>
                     <h3>Web Developer</h3> 
                 </div>
                
@@ -306,12 +76,78 @@ section {
             <img src="images/home.png" alt="Sorry, this image is currently unavailable..">
         </div>
     </section>
+
     <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h1>Hi, I'm here to help!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia necessitatibus unde vero atque sit doloremque adipisci illum, mollitia id fuga quasi. Ullam esse quod eligendi rerum consectetur dolorum possimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam laudantium modi illo ea doloremque suscipit a sequi obcaecati adipisci labore officia tempore ad...
+
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
 
     <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-react'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, laborum a. Fugiat maiores in molestias quasi ea sed, amet error molestiae nihil harum nisi repellendus necessitatibus id odio esse quisquam...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>Software Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, laborum a. Fugiat maiores in molestias quasi ea sed, amet error molestiae nihil harum nisi repellendus necessitatibus id odio esse quisquam...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
 
     <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My Projects</h2>
 
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="Sorry, this image is currently unavailable.">
+
+                <div class="portfolio-layer">
+                    <h4>Software Development</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde doloremque quisquam voluptates? Tempora recusandae quia, rem enim necessitatibus voluptas repellat dicta! Incidunt, quibusdam dolores facere odit voluptas inventore debitis recusandae...</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="Sorry, this image is currently unavailable.">
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde doloremque quisquam voluptates? Tempora recusandae quia, rem enim necessitatibus voluptas repellat dicta! Incidunt, quibusdam dolores facere odit voluptas inventore debitis recusandae...</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="Sorry, this image is currently unavailable.">
+
+                <div class="portfolio-layer">
+                    <h4>Open Source</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde doloremque quisquam voluptates? Tempora recusandae quia, rem enim necessitatibus voluptas repellat dicta! Incidunt, quibusdam dolores facere odit voluptas inventore debitis recusandae...</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- testimonial design -->
 
     <!-- contact section design -->
